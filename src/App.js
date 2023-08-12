@@ -6,13 +6,14 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
-import Main from "./components/Main";
+import Payment from "./components/Payment";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
       <Router>
-        {/* <Nav /> */}
-        <Main />
+        <Navbar />
+        <Payment />
       </Router>
     </>
   );
