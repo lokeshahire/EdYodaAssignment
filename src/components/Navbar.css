@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
 
 * {
   margin: 0;
@@ -34,30 +34,25 @@ nav .logoImg {
   letter-spacing: -1px;
 }
 
-nav .container {
+.container {
   display: flex;
   flex: 1;
   padding: 0 0 0 30px;
+  margin-left: 100px;
 }
 
-nav .container li {
+.container li {
   list-style: none;
   padding: 0 15px;
+  margin-left: 30px;
 }
 
-nav .container li a {
+.container li a {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
   font-family: "Raleway";
   text-decoration: none;
-}
-
-.fa-angle-down {
-  top: 2px;
-  left: -7px;
-  position: relative;
-  cursor: pointer;
 }
 
 @media (max-width: 1245px) {
@@ -99,18 +94,9 @@ nav .container li a {
   }
 }
 
-/* navbar right content styling */
-
 .listItem {
   display: flex;
   align-items: center;
-}
-
-.fa-magnifying-glass {
-  position: relative;
-  left: -18px;
-  top: 1px;
-  cursor: pointer;
 }
 
 .items + .items {
@@ -119,7 +105,7 @@ nav .container li a {
 
 .navButton {
   background: linear-gradient(266.79deg, #0048ff 4.63%, #0096ff 100%);
-  padding: 0.25em 1em;
+  padding: 0.75em 1.5em;
   border-radius: 10rem;
   border: none;
   font-size: 15px;

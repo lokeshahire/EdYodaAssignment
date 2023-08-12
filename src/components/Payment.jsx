@@ -23,89 +23,89 @@ function Payment() {
   const [total, setTotal] = useState(value + (18500 - discount));
   return (
     <>
-      <div className="pricing_section">
-        <div className="content_container">
-          <div className="main_heading">
-            <h1 className="heading">
+      <div className="mainContainer">
+        <div className="mainDiv">
+          <div>
+            <h1 className="title">
               Access curated courses worth <br />
-              <span className="cross-line">₹ 18,500</span> at just{" "}
-              <span className="blue">₹99</span> per year!
+              <span className="cross">₹ 18,500</span> at just
+              <span className="blue"> ₹ 99</span> per year!
             </h1>
           </div>
 
-          <div className="content_wrap">
-            <div className="content_line">
-              <img className="left_icons" src={courses} alt="" />
-              <p className="left_lines">
-                <span className="blue">100+</span> Job relevant courses{" "}
+          <div>
+            <div className="lineDiv">
+              <img className="logoImg" src={courses} alt="" />
+              <p className="leftTag">
+                <span className="blue">100+</span> Job relevant courses
               </p>
             </div>
 
-            <div className="content_line">
-              <img className="left_icons" src={timer} alt="" />
-              <p className="left_lines">
-                <span className="blue">20,000+</span> Hours of content{" "}
+            <div className="lineDiv">
+              <img className="logoImg" src={timer} alt="" />
+              <p className="leftTag">
+                <span className="blue">20,000+</span> Hours of content
               </p>
             </div>
 
-            <div className="content_line">
-              <img className="left_icons" src={live} alt="" />
-              <p className="left_lines">
+            <div className="lineDiv">
+              <img className="logoImg" src={live} alt="" />
+              <p className="leftTag">
                 <span className="blue">Exclusive</span> webinar access
               </p>
             </div>
 
-            <div className="content_line">
-              <img className="left_icons" src={scholarship} alt="" />
-              <p className="left_lines">
+            <div className="lineDiv">
+              <img className="logoImg" src={scholarship} alt="" />
+              <p className="leftTag">
                 Scholarship worth <span className="blue">₹94,500</span>
               </p>
             </div>
 
-            <div className="content_line">
-              <img className="left_icons" src={ads} alt="" />
-              <p className="left_lines">
+            <div className="lineDiv">
+              <img className="logoImg" src={ads} alt="" />
+              <p className="leftTag">
                 <span className="blue">Ad Free</span> learning experience
               </p>
             </div>
           </div>
         </div>
 
-        <div className="payment_plan_container">
-          <div className="payment_plan_card">
-            <div className="signup_subscribe">
-              <div className="onetwo_div">
-                <img className="onetwo_img" src={one} alt="" />
-                <p className="oneTwoP">Sign Up</p>
+        <div className="planDiv">
+          <div className="cardDiv">
+            <div className="signDiv">
+              <div className="lastDiv">
+                <img className="lastImg" src={one} alt="" />
+                <p className="lastTag">Sign Up</p>
               </div>
 
-              <div className="onetwo_div">
-                <img className="onetwo_img" src={two} alt="" />
-                <p className="oneTwoP">Subscribe</p>
+              <div className="lastDiv">
+                <img className="lastImg" src={two} alt="" />
+                <p className="lastTag">Subscribe</p>
               </div>
             </div>
 
-            <h2 className="payment_title">Select your subscription plan</h2>
+            <h2 className="payTag">Select your subscription plan</h2>
 
-            <div className="month_card month_expired">
-              <div className="month_radio_div">
-                <p className="offer-expired">
-                  <span className="ex-rc-text">Offer expired</span>
+            <div className="divCard expDiv">
+              <div className="cardPoint">
+                <p className="offerDiv">
+                  <span className="offerExp">Offer expired</span>
                 </p>
-                <p className="months_p">
+                <p className="tagTitle">
                   <GrRadialSelected size={15} className="select-icons" /> 12
                   Months Subscription
                 </p>
               </div>
 
-              <div className="pricing_div">
-                <p className="total_price">Total ₹99</p>
-                <p className="total_month">₹8 /mo</p>
+              <div>
+                <p className="totalTag">Total ₹99</p>
+                <p className="monthPrice">₹8 /mo</p>
               </div>
             </div>
 
             <div
-              className={`month_card month_recommended ${
+              className={`divCard subDiv ${
                 select[12] ? "subscription2" : "subscription"
               }`}
               onClick={() => {
@@ -121,16 +121,16 @@ function Payment() {
                 setTotal(value + (18500 - discount));
               }}
             >
-              <div className="month_radio_div">
-                <p className="offer-recommended">
-                  <span className="ex-rc-text">Recommended</span>
+              <div className="cardPoint">
+                <p className="recomm">
+                  <span className="offerExp">Recommended</span>
                 </p>
-                <p className="months_p">
+                <p className="tagTitle">
                   <div
                     className={` ${select[12] ? "checkFill" : "checkEmpty"}`}
                   >
                     {select[12] ? (
-                      <BsCheckCircleFill />
+                      <BsCheckCircleFill color="green" />
                     ) : (
                       <MdRadioButtonUnchecked />
                     )}
@@ -140,16 +140,16 @@ function Payment() {
                 </p>
               </div>
 
-              <div className="pricing_div">
-                <p className="total_price">
+              <div className="priceDiv">
+                <p className="totalTag">
                   Total <span className="black">₹179</span>
                 </p>
-                <p className="total_month">₹15 /mo</p>
+                <p className="monthPrice">₹15 /mo</p>
               </div>
             </div>
 
             <div
-              className={`month_card ${
+              className={`divCard ${
                 select[6] ? "subscription2" : "subscription"
               }`}
               onClick={() => {
@@ -165,27 +165,27 @@ function Payment() {
                 setTotal(value + (18500 - discount));
               }}
             >
-              <div className="month_radio_div months-input-part">
+              <div className="cardPoint monthPriceDiv">
                 <div className={`${select[6] ? "checkFill" : "checkEmpty"}`}>
                   {select[6] ? (
-                    <BsCheckCircleFill />
+                    <BsCheckCircleFill color="green" />
                   ) : (
                     <MdRadioButtonUnchecked />
                   )}
                 </div>
-                <p className="months_p">6 Months Subscription</p>
+                <p className="tagTitle">6 Months Subscription</p>
               </div>
 
-              <div className="pricing_div">
-                <p className="total_price">
+              <div className="priceDiv">
+                <p className="totalTag">
                   Total <span className="black">₹149</span>
                 </p>
-                <p className="total_month">₹25 /mo</p>
+                <p className="monthPrice">₹25 /mo</p>
               </div>
             </div>
 
             <div
-              className={`month_card ${
+              className={`divCard ${
                 select[3] ? "subscription2" : "subscription"
               }`}
               onClick={() => {
@@ -201,68 +201,66 @@ function Payment() {
                 setTotal(value + (18500 - discount));
               }}
             >
-              <div className="month_radio_div months-input-part">
+              <div className="cardPoint monthPriceDiv">
                 <div className={`${select[3] ? "checkFill" : "checkEmpty"}`}>
                   {select[3] ? (
-                    <BsCheckCircleFill />
+                    <BsCheckCircleFill color="green" />
                   ) : (
                     <MdRadioButtonUnchecked />
                   )}
                 </div>
-                <p className="months_p">3 Months Subscription</p>
+                <p className="tagTitle">3 Months Subscription</p>
               </div>
 
-              <div className="pricing_div">
-                <p className="total_price">
+              <div className="priceDiv">
+                <p className="totalTag">
                   Total <span className="black">₹99</span>
                 </p>
-                <p className="total_month">₹33 /mo</p>
+                <p className="monthPrice">₹33 /mo</p>
               </div>
             </div>
 
             <hr />
 
-            <div className="subscription_fee_div">
-              <p className="subscription_fee">Subscription Fee</p>
-              <p className="subscription_price">
+            <div className="feeDiv">
+              <p>Subscription Fee</p>
+              <p>
                 <span className="black">₹18,500</span>
               </p>
             </div>
 
-            <div className="limited_time_div">
-              <div className="limited_time_text_side">
-                <p className="limited_time_offer">Limited time offer</p>
+            <div className="limDiv">
+              <div className="limtagDiv">
+                <p className="limTime">Limited time offer</p>
 
-                <div className="limited_time_text_div2">
-                  <img className="timer_img" src={IconClock} alt="timer" />
-                  <p className="limited_time_date">
-                    Offer valid till 25th March 2023
-                  </p>
+                <div className="limDiv2">
+                  <img className="imgTimer" src={IconClock} alt="timer" />
+                  <p className="limDate">Offer valid till 25th March 2023</p>
                 </div>
               </div>
 
-              <div className="limited_time_price_side">
-                <p className="limited_time_price">
+              <div>
+                <p className="limPrice">
                   <span className="black">- ₹{discount}</span>
                 </p>
               </div>
             </div>
 
-            <div className="total_fee_div">
-              <p className="total_fee">
+            <div className="feeTotalDiv">
+              <p>
                 <span className="black">Total</span> (Incl. of 18% GST)
               </p>
-              <p className="total_price">
+              <p className="totalTag">
                 <span className="black">₹{total}</span>
               </p>
             </div>
-            <div className="btn-container">
-              <button className="cancel-btn">CANCEL</button>
-              <button className="pay-btn">PROCEED TO PAY</button>
+            <div className="feeButton">
+              <button className="canBtn">CANCEL</button>
+              <button className="payBtn">PROCEED TO PAY</button>
             </div>
             <img
               src="https://cdn.razorpay.com/static/assets/merchant-badge/badge-dark.png"
-              className="razorpay-logo"
+              className="razLogo"
               alt="logo"
             />
           </div>

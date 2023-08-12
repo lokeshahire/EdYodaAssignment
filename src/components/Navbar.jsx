@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import LOGO from "../Images/LOGO.png";
+import { AiOutlineSearch } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io/";
 
 function Navbar() {
   return (
@@ -12,14 +14,14 @@ function Navbar() {
         <li>
           <a href="#">Courses</a>
         </li>
-        <i className="fa-solid fa-angle-down"></i>
+        <IoIosArrowDown />
         <li>
           <a href="#">Programs</a>
         </li>
-        <i className="fa-solid fa-angle-down"></i>
+        <IoIosArrowDown />
       </div>
       <ul className="listItem">
-        <i className="fa-solid fa-magnifying-glass"></i>
+        <AiOutlineSearch />
         <li className="items">
           <a href="#" className="link1">
             Log in

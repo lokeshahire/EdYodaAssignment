@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
 
-.pricing_section {
+.mainContainer {
   background-image: url(../Images/Background.png);
   background-color: #172746;
   background-size: 100% 100%;
@@ -14,39 +14,39 @@
   font-family: "Raleway";
 }
 
-.content_container {
+.mainDiv {
   width: 65%;
   height: 100%;
   align-items: left;
 }
 
-.heading {
+.title {
   color: #ffffff;
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 50px;
 }
 
-.content_line {
+.lineDiv {
   display: flex;
   align-items: center;
   justify-content: left;
   margin-bottom: 30px;
 }
 
-.left_icons {
+.logoImg {
   height: 40px;
   width: 40px;
   margin-right: 50px;
 }
 
-.left_lines {
+.leftTag {
   color: #ffffff;
   font-weight: 600;
   font-size: 22px;
 }
 
-.cross-line {
+.cross {
   text-decoration-line: line-through;
   text-decoration-color: red;
 }
@@ -57,18 +57,18 @@
 
 /* Right side */
 
-.payment_plan_container {
+.planDiv {
   width: 35%;
 }
 
-.payment_plan_card {
+.cardDiv {
   background-color: white;
   height: 97%;
   border-radius: 8px;
   text-align: center;
 }
 
-.signup_subscribe {
+.signDiv {
   margin: 0 20%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -77,30 +77,31 @@
   align-items: center;
 }
 
-.onetwo_div {
+.lastDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.onetwo_img {
+.lastImg {
   height: 25px;
   cursor: pointer;
 }
 
-.oneTwoP {
+.lastTag {
   font-size: 0.8rem;
   margin-top: 5px;
 }
 
-.payment_title {
+.payTag {
   font-size: 1.1rem;
   font-weight: 600;
   padding-bottom: 10px;
+  color: #3c4852;
 }
 
-.month_card {
+.divCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,14 +111,14 @@
   padding: 8px 5px;
 }
 
-.month_expired {
+.expDiv {
   border: 2px solid #bebebe;
   background: #e7e7e7;
   color: #bebebe;
   padding: 8px;
 }
 
-.offer-expired {
+.offerDiv {
   display: flex;
   width: 88px;
   height: 12px;
@@ -132,7 +133,7 @@
   border-bottom-right-radius: 6px;
 }
 
-.offer-recommended {
+.recomm {
   display: flex;
   width: 88px;
   height: 12px;
@@ -147,7 +148,7 @@
   border-bottom-right-radius: 6px;
 }
 
-.ex-rc-text {
+.offerExp {
   margin-left: 18%;
 }
 
@@ -166,7 +167,7 @@
   opacity: 0.4;
 }
 
-.month_radio_div {
+.cardPoint {
   display: flex;
   margin: -4%;
   margin-top: -8%;
@@ -175,7 +176,7 @@
   align-items: flex-start;
 }
 
-.months_p {
+.tagTitle {
   font-size: 0.8rem;
   font-weight: 700;
   margin-left: 10px;
@@ -183,17 +184,17 @@
   display: flex;
 }
 
-.total_price {
+.totalTag {
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.total_month {
+.monthPrice {
   font-size: 0.6rem;
   font-weight: 500;
 }
 
-.months-input-part {
+.monthPriceDiv {
   flex-direction: row;
   padding-left: 10px;
   padding-top: 12px;
@@ -237,7 +238,7 @@ hr {
   margin: 3% 5%;
 }
 
-.subscription_fee_div {
+.feeDiv {
   display: flex;
   justify-content: space-between;
   margin: 0 8% 3% 8%;
@@ -245,7 +246,7 @@ hr {
   font-weight: 500;
 }
 
-.limited_time_div {
+.limDiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -276,41 +277,41 @@ hr {
   text-align: left;
 }
 
-.limited_time_text_side {
+.limtagDiv {
   display: flex;
   flex-direction: column;
 }
 
-.limited_time_offer {
+.limTime {
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 5px;
   color: #de4313;
 }
 
-.limited_time_text_div2 {
+.limDiv2 {
   display: flex;
   align-items: center;
 }
 
-.timer_img {
+.imgTimer {
   height: 20px;
 }
 
-.limited_time_date {
+.limDate {
   font-size: 0.7rem;
   font-weight: 500;
   margin-left: 10px;
   color: #de4313;
 }
 
-.limited_time_price {
+.limPrice {
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
-.total_fee_div {
+.feeTotalDiv {
   display: flex;
   justify-content: space-between;
   margin: 0 8% 3% 8%;
@@ -318,7 +319,7 @@ hr {
   font-weight: 500;
 }
 
-.btn-container {
+.feeButton {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -326,7 +327,7 @@ hr {
   gap: 20px;
 }
 
-.cancel-btn {
+.canBtn {
   color: #f77171;
   background-color: transparent;
   border: 1px solid #f77171;
@@ -338,7 +339,7 @@ hr {
   cursor: pointer;
 }
 
-.pay-btn {
+.payBtn {
   color: #ffffff;
   background-color: #47ba68;
   border: none;
@@ -350,7 +351,7 @@ hr {
   cursor: pointer;
 }
 
-.razorpay-logo {
+.razLogo {
   cursor: pointer;
   margin: 2% 5%;
   width: 80px;
